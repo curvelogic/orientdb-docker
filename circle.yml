@@ -5,8 +5,8 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker build -t curvelogic/orientdb-docker:2.0.2
-    - docker build -t curvelogic/orientdb-docker:latest
+    - docker build -t curvelogic/orientdb-docker:2.0.2 .
+    - docker build -t curvelogic/orientdb-docker:latest .
 
 deployment:
   hub:
