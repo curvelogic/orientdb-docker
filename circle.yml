@@ -8,6 +8,10 @@ dependencies:
     - docker build -t curvelogic/orientdb-docker:2.0.2 .
     - docker build -t curvelogic/orientdb-docker:latest .
 
+test:
+  override:
+    - docker run curvelogic/orientdb-docker ls
+    
 deployment:
   hub:
     branch: master
